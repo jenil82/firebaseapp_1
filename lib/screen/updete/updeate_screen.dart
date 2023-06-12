@@ -93,14 +93,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.devices_other,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Padding(
                           padding: EdgeInsets.symmetric(
                             vertical: 5,
@@ -144,7 +136,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Price",
+                    "Price",
                     style: GoogleFonts.secularOne(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
@@ -171,22 +163,11 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.currency_rupee,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
+
+
                         Padding(
                           padding: EdgeInsets.symmetric(
                             vertical: 5,
-                          ),
-                          child: Container(
-                            height: double.infinity,
-                            width: 3,
-                            color: Colors.white,
                           ),
                         ),
                         SizedBox(
@@ -201,7 +182,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "10000,20000,30000...",
+                              hintText: "00",
                               hintStyle: GoogleFonts.secularOne(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
@@ -222,7 +203,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Description",
+                    "Description",
                     style: GoogleFonts.secularOne(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
@@ -279,7 +260,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "5G,12GB,A17 Chip...",
+                              hintText: "",
                               hintStyle: GoogleFonts.secularOne(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
@@ -300,7 +281,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Offer",
+                    "Offer",
                     style: GoogleFonts.secularOne(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
@@ -327,11 +308,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.campaign,
-                          color: Colors.white,
-                          size: 30,
-                        ),
                         SizedBox(
                           width: 15,
                         ),
@@ -357,7 +333,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "10,20,30...",
+                              hintText: "00",
                               hintStyle: GoogleFonts.secularOne(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
@@ -378,7 +354,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Category",
+                    "Category",
                     style: GoogleFonts.secularOne(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
@@ -404,11 +380,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
                           top: 10,
                           bottom: 10,
                         ),
-                        child: Icon(
-                          Icons.category,
-                          color: Colors.white,
-                          size: 30,
-                        ),
                       ),
                       SizedBox(
                         width: 15,
@@ -417,11 +388,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
                         padding: EdgeInsets.only(
                           top: 15,
                           bottom: 15,
-                        ),
-                        child: Container(
-                          height: double.infinity,
-                          width: 3,
-                          color: Colors.white,
                         ),
                       ),
                       SizedBox(

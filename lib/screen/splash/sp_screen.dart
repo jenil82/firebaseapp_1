@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     Timer(
-      Duration(seconds: 3),
+      Duration(seconds: 1),
           () => isLogin == true
           ? Get.offAndToNamed('home_screen')
           : Get.offAndToNamed('signin_screen'),
@@ -34,31 +34,13 @@ class _SplashScreenState extends State<SplashScreen> {
         backgroundColor: Colors.white,
         body: Stack(
           children: [
-            Align(
-              alignment: Alignment.bottomRight,
-              child: Padding(
-                padding: EdgeInsets.all(20),
-                child: Text(
-                  "Admin Only !",
-                  style: GoogleFonts.secularOne(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 14,
-                    color: Colors.black,
-                  ),
-                ),
-              ),
-            ),
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.shopping_bag,
-                    color: Colors.black,
-                    size: 160,
-                  ),
+                 Image.asset("assets/img/3.png",height: 50,width: 50,),
                   Text(
-                    "Shopping City",
+                    "SHOPCART",
                     style: GoogleFonts.secularOne(
                       fontWeight: FontWeight.bold,
                       fontSize: 22,

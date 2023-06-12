@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               top: 7,
                             ),
                             child: Text(
-                              "Shopping City",
+                              "SHOPCART",
                               style: GoogleFonts.secularOne(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 22,

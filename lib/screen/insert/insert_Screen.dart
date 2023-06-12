@@ -28,9 +28,9 @@ class _InsertScreenState extends State<InsertScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.blue,
           title: Text(
-            "Insert Item",
+            "SHOPCART",
             style: GoogleFonts.secularOne(
               fontWeight: FontWeight.bold,
               fontSize: 22,
@@ -39,7 +39,7 @@ class _InsertScreenState extends State<InsertScreen> {
             ),
           ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue.shade50,
         body: Padding(
           padding: EdgeInsets.all(20),
           child: SingleChildScrollView(
@@ -51,9 +51,8 @@ class _InsertScreenState extends State<InsertScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Name",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    "Name",
+                    style:TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -67,6 +66,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black,
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -77,27 +77,6 @@ class _InsertScreenState extends State<InsertScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.devices_other,
-                          color: Colors.black,
-                          size: 30,
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 5,
-                          ),
-                          child: Container(
-                            height: double.infinity,
-                            width: 3,
-                            color: Colors.black,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Expanded(
                           child: TextField(
                             controller: namec,
@@ -107,8 +86,8 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "Laptop,Mobile,A/c...",
-                              hintStyle: GoogleFonts.secularOne(
+                              hintText: "",
+                              hintStyle: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -121,16 +100,15 @@ class _InsertScreenState extends State<InsertScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Padding(
                   padding: EdgeInsets.only(
                     left: 2,
                   ),
                   child: Text(
-                    "Product Price",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    "Price",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -155,27 +133,6 @@ class _InsertScreenState extends State<InsertScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.currency_rupee,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 5,
-                          ),
-                          child: Container(
-                            height: double.infinity,
-                            width: 3,
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Expanded(
                           child: TextField(
                             controller: pricec,
@@ -185,8 +142,8 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "10000,20000,30000...",
-                              hintStyle: GoogleFonts.secularOne(
+                              hintText: "",
+                              hintStyle: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -199,16 +156,15 @@ class _InsertScreenState extends State<InsertScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Padding(
                   padding: EdgeInsets.only(
                     left: 2,
                   ),
                   child: Text(
-                    "Product Description",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    "Description",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -233,24 +189,6 @@ class _InsertScreenState extends State<InsertScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.description,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 5,
-                          ),
-                          child: Container(
-                            height: double.infinity,
-                            width: 3,
-                            color: Colors.white,
-                          ),
-                        ),
                         SizedBox(
                           width: 15,
                         ),
@@ -263,8 +201,8 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "5G,12GB,A17 Chip...",
-                              hintStyle: GoogleFonts.secularOne(
+                              hintText: "",
+                              hintStyle: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -284,9 +222,8 @@ class _InsertScreenState extends State<InsertScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Offer",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    "Offer",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -311,27 +248,6 @@ class _InsertScreenState extends State<InsertScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.campaign,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 5,
-                          ),
-                          child: Container(
-                            height: double.infinity,
-                            width: 3,
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Expanded(
                           child: TextField(
                             controller: offerc,
@@ -341,8 +257,8 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "10,20,30...",
-                              hintStyle: GoogleFonts.secularOne(
+                              hintText: "",
+                              hintStyle: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -362,9 +278,8 @@ class _InsertScreenState extends State<InsertScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Category",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    "Category",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -387,25 +302,6 @@ class _InsertScreenState extends State<InsertScreen> {
                           left: 20,
                           top: 10,
                           bottom: 10,
-                        ),
-                        child: Icon(
-                          Icons.category,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(
-                          top: 15,
-                          bottom: 15,
-                        ),
-                        child: Container(
-                          height: double.infinity,
-                          width: 3,
-                          color: Colors.white,
                         ),
                       ),
                       SizedBox(
@@ -433,12 +329,11 @@ class _InsertScreenState extends State<InsertScreen> {
                             border: InputBorder.none,
                           ),
                           dropdownColor: Colors.black,
-                          style: GoogleFonts.secularOne(
+                          style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
                           ),
-                          borderRadius: BorderRadius.circular(10),
                         ),
                       ),
                       SizedBox(
@@ -455,9 +350,8 @@ class _InsertScreenState extends State<InsertScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Image",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    "Image",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -478,7 +372,7 @@ class _InsertScreenState extends State<InsertScreen> {
                     children: [
                       imagePath == null
                           ? Image.asset(
-                        "assets/images/2.png",
+                        "assets/img/2.jpg",
                         height: 150,
                         width: 150,
                       )
@@ -496,25 +390,15 @@ class _InsertScreenState extends State<InsertScreen> {
                             imagePath = xFile!.path;
                           });
                         },
-                        child: Container(
-                          height: 50,
-                          width: 220,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            top: 1,
                           ),
-                          alignment: Alignment.center,
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                              top: 1,
-                            ),
-                            child: Text(
-                              "Choose Image",
-                              style: GoogleFonts.secularOne(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                                color: Colors.black,
-                              ),
+                          child: Text(
+                            "Image",
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
                             ),
                           ),
                         ),
@@ -550,9 +434,8 @@ class _InsertScreenState extends State<InsertScreen> {
                         top: 1,
                       ),
                       child: Text(
-                        "Insert Item",
-                        style: GoogleFonts.secularOne(
-                          fontWeight: FontWeight.bold,
+                        "ok",
+                        style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,
                         ),

@@ -45,7 +45,7 @@ class _SigninScreenState extends State<SigninScreen> {
                     height: 120,
                     width: 120,
                     alignment: Alignment.center,
-                    child: Image.asset("assets/images/1.png"),
+                    child: Image.asset("assets/img/1.png"),
                   ),
                   SizedBox(
                     height: 50,
@@ -77,11 +77,6 @@ class _SigninScreenState extends State<SigninScreen> {
                           Padding(
                             padding: EdgeInsets.symmetric(
                               vertical: 5,
-                            ),
-                            child: Container(
-                              height: double.infinity,
-                              width: 3,
-                              color: Colors.white,
                             ),
                           ),
                           SizedBox(
@@ -133,19 +128,7 @@ class _SigninScreenState extends State<SigninScreen> {
                             color: Colors.white,
                             size: 30,
                           ),
-                          SizedBox(
-                            width: 15,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                              vertical: 5,
-                            ),
-                            child: Container(
-                              height: double.infinity,
-                              width: 3,
-                              color: Colors.white,
-                            ),
-                          ),
+
                           SizedBox(
                             width: 15,
                           ),
@@ -176,60 +159,51 @@ class _SigninScreenState extends State<SigninScreen> {
                     height: 30,
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "Sign In",
-                        style: GoogleFonts.secularOne(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 28,
-                          color: Colors.black,
-                        ),
-                      ),
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundColor: Colors.black,
-                        child: IconButton(
-                          color: Colors.black,
-                          onPressed: () async {
-                            String? msg = await FbHelper.fbHelper.signIn(
-                              email: emailc.text,
-                              password: passwordc.text,
+
+
+                      IconButton(
+                        color: Colors.black,
+                        onPressed: () async {
+                          String? msg = await FbHelper.fbHelper.signIn(
+                            email: emailc.text,
+                            password: passwordc.text,
+                          );
+                          if (msg == "login successfully !") {
+                            final snackBar = SnackBar(
+                              elevation: 0,
+                              behavior: SnackBarBehavior.floating,
+                              backgroundColor: Colors.transparent,
+                              content: AwesomeSnackbarContent(
+                                title: "Success",
+                                message: "${msg}",
+                                contentType: ContentType.success,
+                              ),
                             );
-                            if (msg == "login successfully !") {
-                              final snackBar = SnackBar(
-                                elevation: 0,
-                                behavior: SnackBarBehavior.floating,
-                                backgroundColor: Colors.transparent,
-                                content: AwesomeSnackbarContent(
-                                  title: "Success",
-                                  message: "${msg}",
-                                  contentType: ContentType.success,
-                                ),
-                              );
-                              ScaffoldMessenger.of(context)
-                                ..hideCurrentSnackBar()
-                                ..showSnackBar(snackBar);
-                              Get.offAndToNamed('home_screen');
-                            } else {
-                              final snackBar = SnackBar(
-                                elevation: 0,
-                                behavior: SnackBarBehavior.floating,
-                                backgroundColor: Colors.transparent,
-                                content: AwesomeSnackbarContent(
-                                  title: "Failure",
-                                  message: "${msg}",
-                                  contentType: ContentType.failure,
-                                ),
-                              );
-                              ScaffoldMessenger.of(context)
-                                ..hideCurrentSnackBar()
-                                ..showSnackBar(snackBar);
-                            }
-                          },
-                          icon: Icon(
-                            Icons.arrow_forward,
-                          ),
+                            ScaffoldMessenger.of(context)
+                              ..hideCurrentSnackBar()
+                              ..showSnackBar(snackBar);
+                            Get.offAndToNamed('home_screen');
+                          } else {
+                            final snackBar = SnackBar(
+                              elevation: 0,
+                              behavior: SnackBarBehavior.floating,
+                              backgroundColor: Colors.transparent,
+                              content: AwesomeSnackbarContent(
+                                title: "Failure",
+                                message: "${msg}",
+                                contentType: ContentType.failure,
+                              ),
+                            );
+                            ScaffoldMessenger.of(context)
+                              ..hideCurrentSnackBar()
+                              ..showSnackBar(snackBar);
+                          }
+                        },
+                        icon: Icon(
+                          Icons.save_as,
+                          size: 50,
                         ),
                       ),
                     ],
