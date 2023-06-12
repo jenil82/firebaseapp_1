@@ -24,6 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
+          centerTitle: true,
           title: Text("SHOPCART"),
           actions: [InkWell(
             onTap: () {

@@ -29,6 +29,7 @@ class _InsertScreenState extends State<InsertScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
+          centerTitle: true,
           title: Text(
             "SHOPCART",
             style: GoogleFonts.secularOne(

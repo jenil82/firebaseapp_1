@@ -44,6 +44,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
+          centerTitle: true,
           title: Text(
             "Update",
             style: TextStyle(
@@ -95,13 +96,13 @@ class _UpdateScreenState extends State<UpdateScreen> {
                           child: TextField(
                             controller: namec,
                             cursorColor: Colors.black,
-                            style: GoogleFonts.secularOne(
+                            style:TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
                               hintText: "",
-                              hintStyle: GoogleFonts.secularOne(
+                              hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -155,13 +156,13 @@ class _UpdateScreenState extends State<UpdateScreen> {
                           child: TextField(
                             controller: pricec,
                             cursorColor: Colors.black,
-                            style: GoogleFonts.secularOne(
+                            style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
                               hintText: "",
-                              hintStyle: GoogleFonts.secularOne(
+                              hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
