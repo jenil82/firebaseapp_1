@@ -32,3 +32,4 @@ class HomeController extends GetxController {
     "Other",
   ].obs;
 }
+

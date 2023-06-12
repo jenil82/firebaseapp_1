@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                 Image.asset("assets/img/3.png",height: 50,width: 50,),
+                 Image.asset("assets/img/3.png",height: 100,width: 100,),
                   Text(
                     "SHOPCART",
                     style: GoogleFonts.secularOne(

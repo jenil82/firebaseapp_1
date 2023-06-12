@@ -22,79 +22,34 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
-        body: Column(
-          children: [
-            Container(
-              height: 60,
-              width: double.infinity,
-              child: Row(
-                children: [
-                  InkWell(
-                    onTap: () {
-                      Get.toNamed('insert_screen');
-                    },
-                    child: Container(
-                      height: 60,
-                      width: 60,
-                      alignment: Alignment.center,
-                      child: Icon(
-                        Icons.shopping_bag,
-                        color: Colors.black,
-                        size: 40,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      height: 60,
-                      width: double.infinity,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 7,
-                            ),
-                            child: Text(
-                              "SHOPCART",
-                              style: GoogleFonts.secularOne(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 22,
-                                color: Colors.black,
-                                letterSpacing: 1,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  InkWell(
-                    onTap: () {
-                      FbHelper.fbHelper.signOut();
-                      Get.offAndToNamed('signin_screen');
-                    },
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                        top: 6,
-                      ),
-                      child: Container(
-                        height: 60,
-                        width: 60,
-                        alignment: Alignment.center,
-                        child: Icon(
-                          Icons.logout,
-                          color: Colors.black,
-                          size: 25,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: Text("SHOPCART"),
+          actions: [InkWell(
+            onTap: () {
+              FbHelper.fbHelper.signOut();
+              Get.offAndToNamed('signin_screen');
+            },
+            child: Padding(
+              padding: EdgeInsets.only(
+                top: 6,
+              ),
+              child: Container(
+                height: 60,
+                width: 60,
+                alignment: Alignment.center,
+                child: Icon(
+                  Icons.logout,
+                  color: Colors.black,
+                  size: 25,
+                ),
               ),
             ),
+          ),],
+        ),
+        backgroundColor: Colors.blue.shade50,
+        body: Column(
+          children: [
             Expanded(
               child: StreamBuilder(
                 stream: FbHelper.fbHelper.readItem(),
@@ -149,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               );
                               homeController.dataList.add(updateModal);
                               homeController.selectedUCategory.value =
-                              "${homeController.dataList[0].category}";
+                                  "${homeController.dataList[0].category}";
                               Get.toNamed('update_screen');
                             },
                             onDoubleTap: () {
@@ -183,20 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       child: Image.asset("assets/images/2.png"),
                                     ),
                                     SizedBox(
-                                      width: 15,
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.symmetric(
-                                        vertical: 5,
-                                      ),
-                                      child: Container(
-                                        height: double.infinity,
-                                        width: 3,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 15,
+                                      width: 20,
                                     ),
                                     Expanded(
                                       child: Container(
@@ -204,9 +146,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                         width: double.infinity,
                                         child: Column(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.center,
+                                              MainAxisAlignment.center,
                                           crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                              CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               "${dataList[index].name}",
@@ -271,6 +213,36 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height:50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(100),
+                        color: Colors.blue),
+                    child: InkWell(
+                      onTap: () {
+                        Get.toNamed('insert_screen');
+                      },
+                      child: Container(
+                        height: 60,
+                        width: 60,
+                        alignment: Alignment.center,
+                        child: Icon(
+                          Icons.shopping_bag,
+                          color: Colors.black,
+                          size: 40,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),

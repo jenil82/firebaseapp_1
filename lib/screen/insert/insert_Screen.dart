@@ -65,7 +65,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
@@ -80,15 +80,15 @@ class _InsertScreenState extends State<InsertScreen> {
                         Expanded(
                           child: TextField(
                             controller: namec,
-                            cursorColor: Colors.white,
-                            style: GoogleFonts.secularOne(
-                              color: Colors.white,
+                            cursorColor: Colors.black,
+                            style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
                               hintText: "",
                               hintStyle: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                               border: InputBorder.none,
@@ -121,7 +121,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
@@ -136,15 +136,15 @@ class _InsertScreenState extends State<InsertScreen> {
                         Expanded(
                           child: TextField(
                             controller: pricec,
-                            cursorColor: Colors.white,
-                            style: GoogleFonts.secularOne(
-                              color: Colors.white,
+                            cursorColor: Colors.black,
+                            style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
                               hintText: "",
                               hintStyle: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                               border: InputBorder.none,
@@ -177,7 +177,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
@@ -195,15 +195,15 @@ class _InsertScreenState extends State<InsertScreen> {
                         Expanded(
                           child: TextField(
                             controller: descriptionc,
-                            cursorColor: Colors.white,
-                            style: GoogleFonts.secularOne(
-                              color: Colors.white,
+                            cursorColor: Colors.black,
+                            style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
                               hintText: "",
                               hintStyle: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                               border: InputBorder.none,
@@ -236,7 +236,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
@@ -251,9 +251,9 @@ class _InsertScreenState extends State<InsertScreen> {
                         Expanded(
                           child: TextField(
                             controller: offerc,
-                            cursorColor: Colors.white,
-                            style: GoogleFonts.secularOne(
-                              color: Colors.white,
+                            cursorColor: Colors.black,
+                            style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
@@ -292,7 +292,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Row(
@@ -328,9 +328,9 @@ class _InsertScreenState extends State<InsertScreen> {
                           decoration: InputDecoration(
                             border: InputBorder.none,
                           ),
-                          dropdownColor: Colors.black,
+                          dropdownColor: Colors.blue.shade50,
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
                           ),
@@ -364,7 +364,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 300,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
@@ -372,7 +372,7 @@ class _InsertScreenState extends State<InsertScreen> {
                     children: [
                       imagePath == null
                           ? Image.asset(
-                        "assets/img/2.jpg",
+                        "assets/img/1.png",
                         height: 150,
                         width: 150,
                       )
@@ -398,7 +398,7 @@ class _InsertScreenState extends State<InsertScreen> {
                             "Image",
                             style: TextStyle(
                               fontSize: 16,
-                              color: Colors.white,
+                              color: Colors.black,
                             ),
                           ),
                         ),
@@ -425,7 +425,7 @@ class _InsertScreenState extends State<InsertScreen> {
                     height: 60,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.blue.shade50,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     alignment: Alignment.center,
@@ -437,7 +437,7 @@ class _InsertScreenState extends State<InsertScreen> {
                         "ok",
                         style: TextStyle(
                           fontSize: 20,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                       ),
                     ),

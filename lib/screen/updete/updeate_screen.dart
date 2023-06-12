@@ -43,18 +43,17 @@ class _UpdateScreenState extends State<UpdateScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.blue,
           title: Text(
-            "Update Item",
-            style: GoogleFonts.secularOne(
-              fontWeight: FontWeight.bold,
+            "Update",
+            style: TextStyle(
               fontSize: 22,
               color: Colors.black,
               letterSpacing: 1,
             ),
           ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue.shade50,
         body: Padding(
           padding: EdgeInsets.all(20),
           child: SingleChildScrollView(
@@ -66,9 +65,8 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Name",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    " Name",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -81,7 +79,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
@@ -93,31 +91,18 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     ),
                     child: Row(
                       children: [
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 5,
-                          ),
-                          child: Container(
-                            height: double.infinity,
-                            width: 3,
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Expanded(
                           child: TextField(
                             controller: namec,
-                            cursorColor: Colors.white,
+                            cursorColor: Colors.black,
                             style: GoogleFonts.secularOne(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "Laptop,Mobile,A/c...",
+                              hintText: "",
                               hintStyle: GoogleFonts.secularOne(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                               border: InputBorder.none,
@@ -136,9 +121,8 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Price",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    " Price",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -151,7 +135,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
@@ -164,27 +148,21 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     child: Row(
                       children: [
 
-
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 5,
-                          ),
-                        ),
                         SizedBox(
                           width: 15,
                         ),
                         Expanded(
                           child: TextField(
                             controller: pricec,
-                            cursorColor: Colors.white,
+                            cursorColor: Colors.black,
                             style: GoogleFonts.secularOne(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "00",
+                              hintText: "",
                               hintStyle: GoogleFonts.secularOne(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                               border: InputBorder.none,
@@ -203,9 +181,8 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Description",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    " Description",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -218,7 +195,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
@@ -230,39 +207,21 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.description,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 5,
-                          ),
-                          child: Container(
-                            height: double.infinity,
-                            width: 3,
-                            color: Colors.white,
-                          ),
-                        ),
                         SizedBox(
                           width: 15,
                         ),
                         Expanded(
                           child: TextField(
                             controller: descriptionc,
-                            cursorColor: Colors.white,
-                            style: GoogleFonts.secularOne(
-                              color: Colors.white,
+                            cursorColor: Colors.black,
+                            style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
                               hintText: "",
-                              hintStyle: GoogleFonts.secularOne(
-                                color: Colors.white,
+                              hintStyle: TextStyle(
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                               border: InputBorder.none,
@@ -281,9 +240,8 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Offer",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    " Offer",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -296,7 +254,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Padding(
@@ -311,31 +269,18 @@ class _UpdateScreenState extends State<UpdateScreen> {
                         SizedBox(
                           width: 15,
                         ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 5,
-                          ),
-                          child: Container(
-                            height: double.infinity,
-                            width: 3,
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Expanded(
                           child: TextField(
                             controller: offerc,
-                            cursorColor: Colors.white,
-                            style: GoogleFonts.secularOne(
-                              color: Colors.white,
+                            cursorColor: Colors.black,
+                            style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "00",
-                              hintStyle: GoogleFonts.secularOne(
-                                color: Colors.white,
+                              hintText: "",
+                              hintStyle: TextStyle(
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                               border: InputBorder.none,
@@ -354,9 +299,8 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Category",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    " Category",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -369,27 +313,11 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 65,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Row(
                     children: [
-                      Padding(
-                        padding: EdgeInsets.only(
-                          left: 20,
-                          top: 10,
-                          bottom: 10,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(
-                          top: 15,
-                          bottom: 15,
-                        ),
-                      ),
                       SizedBox(
                         width: 15,
                       ),
@@ -409,14 +337,14 @@ class _UpdateScreenState extends State<UpdateScreen> {
                           },
                           icon: Icon(
                             Icons.arrow_drop_down,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                           decoration: InputDecoration(
                             border: InputBorder.none,
                           ),
-                          dropdownColor: Colors.black,
-                          style: GoogleFonts.secularOne(
-                            color: Colors.white,
+                          dropdownColor: Colors.blue.shade50,
+                          style: TextStyle(
+                            color: Colors.black,
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
                           ),
@@ -437,9 +365,8 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     left: 2,
                   ),
                   child: Text(
-                    "Product Image",
-                    style: GoogleFonts.secularOne(
-                      fontWeight: FontWeight.bold,
+                    " Image",
+                    style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
                     ),
@@ -452,7 +379,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 300,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
@@ -460,7 +387,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     children: [
                       imagePath == null
                           ? Image.asset(
-                        "assets/images/2.png",
+                        "",
                         height: 150,
                         width: 150,
                       )
@@ -478,25 +405,15 @@ class _UpdateScreenState extends State<UpdateScreen> {
                             imagePath = xFile!.path;
                           });
                         },
-                        child: Container(
-                          height: 50,
-                          width: 220,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            top: 1,
                           ),
-                          alignment: Alignment.center,
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                              top: 1,
-                            ),
-                            child: Text(
-                              "Update Image",
-                              style: GoogleFonts.secularOne(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                                color: Colors.black,
-                              ),
+                          child: Text(
+                            " Image",
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.black,
                             ),
                           ),
                         ),
@@ -524,7 +441,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     height: 60,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.blue.shade50,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     alignment: Alignment.center,
@@ -533,11 +450,10 @@ class _UpdateScreenState extends State<UpdateScreen> {
                         top: 1,
                       ),
                       child: Text(
-                        "Update Item",
-                        style: GoogleFonts.secularOne(
-                          fontWeight: FontWeight.bold,
+                        "Update",
+                        style: TextStyle(
                           fontSize: 20,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                       ),
                     ),
