@@ -398,7 +398,7 @@ class _InsertScreenState extends State<InsertScreen> {
                           child: Text(
                             "Image",
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 19,
                               color: Colors.black,
                             ),
                           ),
