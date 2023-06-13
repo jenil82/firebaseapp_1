@@ -362,7 +362,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 5,
                 ),
                 Container(
-                  height: 300,
+                  height: 150,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
@@ -374,8 +374,8 @@ class _InsertScreenState extends State<InsertScreen> {
                       imagePath == null
                           ? Image.asset(
                         "assets/img/1.png",
-                        height: 150,
-                        width: 150,
+                        height: 100,
+                        width: 100,
                       )
                           : Image.file(imagePath),
                       SizedBox(

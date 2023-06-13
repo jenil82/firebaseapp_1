@@ -25,7 +25,8 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           backgroundColor: Colors.blue,
           centerTitle: true,
-          title: Text("SHOPCART"),
+          leading: Icon(Icons.dehaze_rounded,color: Colors.black,),
+          title: Text("SHOPCART",style:TextStyle(color: Colors.black,fontSize: 25),),
           actions: [InkWell(
             onTap: () {
               FbHelper.fbHelper.signOut();

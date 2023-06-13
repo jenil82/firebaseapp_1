@@ -148,8 +148,6 @@ class _SigninScreenState extends State<SigninScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-
-
                         IconButton(
                           color: Colors.black,
                           onPressed: () async {
