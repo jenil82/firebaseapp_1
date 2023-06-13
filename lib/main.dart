@@ -21,7 +21,7 @@ Future<void> main() async {
             page: () => SplashScreen(),
           ),
           GetPage(
-            name: '/signin_screen',
+            name: '/si',
             page: () => SigninScreen(),
           ),
           GetPage(

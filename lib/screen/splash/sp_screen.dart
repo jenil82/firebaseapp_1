@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     Timer(
-      Duration(seconds: 1),
+      Duration(seconds: 10),
           () => isLogin == true
           ? Get.offAndToNamed('home_screen')
           : Get.offAndToNamed('signin_screen'),
@@ -38,12 +38,12 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                 Image.asset("assets/img/3.png",height: 100,width: 100,),
+                 Image.asset("assets/img/3.png",height: 200,width: 200,),
                   Text(
-                    "SHOPCART",
+                    "S H O P C A R T",
                     style: GoogleFonts.secularOne(
                       fontWeight: FontWeight.bold,
-                      fontSize: 22,
+                      fontSize: 30,
                       color: Colors.black,
                       letterSpacing: 1,
                     ),

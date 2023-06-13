@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
           actions: [InkWell(
             onTap: () {
               FbHelper.fbHelper.signOut();
-              Get.offAndToNamed('signin_screen');
+              Get.offAndToNamed('si');
             },
             child: Padding(
               padding: EdgeInsets.only(
@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 60,
                 alignment: Alignment.center,
                 child: Icon(
-                  Icons.logout,
+                  Icons.login,
                   color: Colors.black,
                   size: 25,
                 ),
@@ -136,7 +136,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       height: 100,
                                       width: 100,
                                       alignment: Alignment.center,
-                                      child: Image.asset("assets/images/2.png"),
+                                      child: Image.asset("assets/images/2.png",height: 10,width: 10,),
                                     ),
                                     SizedBox(
                                       width: 20,
@@ -219,25 +219,18 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    height:50,
-                    width: 50,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        color: Colors.blue),
-                    child: InkWell(
-                      onTap: () {
-                        Get.toNamed('insert_screen');
-                      },
-                      child: Container(
-                        height: 60,
-                        width: 60,
-                        alignment: Alignment.center,
-                        child: Icon(
-                          Icons.shopping_bag,
-                          color: Colors.black,
-                          size: 40,
-                        ),
+                  child: InkWell(
+                    onTap: () {
+                      Get.toNamed('insert_screen');
+                    },
+                    child: Container(
+                      height: 60,
+                      width: 60,
+                      alignment: Alignment.center,
+                      child: Icon(
+                        Icons.shopping_cart,
+                        color: Colors.black,
+                        size: 40,
                       ),
                     ),
                   ),

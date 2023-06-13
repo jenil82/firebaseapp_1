@@ -16,15 +16,15 @@ class FbHelper {
     String? msg;
     await firebaseAuth
         .signInWithEmailAndPassword(
-      email: email,
-      password: password,
-    )
+          email: email,
+          password: password,
+        )
         .then(
           (value) => msg = "login successfully !",
-    )
+        )
         .catchError(
           (e) => msg = "login failed !",
-    );
+        );
     return msg;
   }
 
@@ -57,7 +57,6 @@ class FbHelper {
       "description": description,
       "offer": offer,
       "category": category,
-      // "image": image,
     });
   }
 
@@ -77,7 +76,6 @@ class FbHelper {
     description,
     offer,
     category,
-    // image,
     id,
   }) {
     User? user = firebaseAuth.currentUser;
@@ -93,7 +91,6 @@ class FbHelper {
       "description": description,
       "offer": offer,
       "category": category,
-      // "image": image,
     });
   }
 
