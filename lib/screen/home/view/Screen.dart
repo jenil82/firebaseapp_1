@@ -25,29 +25,37 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           backgroundColor: Colors.blue,
           centerTitle: true,
-          leading: Icon(Icons.dehaze_rounded,color: Colors.black,),
-          title: Text("SHOPCART",style:TextStyle(color: Colors.black,fontSize: 25),),
-          actions: [InkWell(
-            onTap: () {
-              FbHelper.fbHelper.signOut();
-              Get.offAndToNamed('si');
-            },
-            child: Padding(
-              padding: EdgeInsets.only(
-                top: 6,
-              ),
-              child: Container(
-                height: 60,
-                width: 60,
-                alignment: Alignment.center,
-                child: Icon(
-                  Icons.login,
-                  color: Colors.black,
-                  size: 25,
+          leading: Icon(
+            Icons.dehaze_rounded,
+            color: Colors.black,
+          ),
+          title: Text(
+            "SHOPCART",
+            style: TextStyle(color: Colors.black, fontSize: 25),
+          ),
+          actions: [
+            InkWell(
+              onTap: () {
+                FbHelper.fbHelper.signOut();
+                Get.offAndToNamed('si');
+              },
+              child: Padding(
+                padding: EdgeInsets.only(
+                  top: 6,
+                ),
+                child: Container(
+                  height: 60,
+                  width: 60,
+                  alignment: Alignment.center,
+                  child: Icon(
+                    Icons.login,
+                    color: Colors.black,
+                    size: 25,
+                  ),
                 ),
               ),
             ),
-          ),],
+          ],
         ),
         backgroundColor: Colors.blue.shade50,
         body: Column(
@@ -119,10 +127,22 @@ class _HomeScreenState extends State<HomeScreen> {
                               Get.toNamed('insert_screen');
                             },
                             child: Container(
-                              height: 150,
+                              height: 500,
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: Colors.black,
+                                color: Colors.blueAccent.shade100,
+                                borderRadius: BorderRadius.circular(10),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.white12,
+                                    offset: const Offset(
+                                      5.0,
+                                      5.0,
+                                    ),
+                                    blurRadius: 10.0,
+                                    spreadRadius: 2.0,
+                                  ), //BoxShadowBoxShadow
+                                ],
                               ),
                               child: Padding(
                                 padding: EdgeInsets.only(
@@ -134,10 +154,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Row(
                                   children: [
                                     Container(
-                                      height: 100,
-                                      width: 100,
+                                      height: 200,
+                                      width: 200,
                                       alignment: Alignment.center,
-                                      child: Image.asset("assets/images/2.png",height: 10,width: 10,),
+                                      child: Image.asset(
+                                        "assets/img/3.png",
+                                        height: 100,
+                                        width: 100,
+                                      ),
                                     ),
                                     SizedBox(
                                       width: 20,
@@ -152,46 +176,92 @@ class _HomeScreenState extends State<HomeScreen> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
+                                            SizedBox(
+                                              height: 20,
+                                            ),
+                                            Container(
+                                              height:3 ,
+                                              width: double.infinity,
+                                              color: Colors.white,
+                                            ),
+                                            SizedBox(
+                                              height: 20,
+                                            ),
                                             Text(
-                                              "${dataList[index].name}",
-                                              style: GoogleFonts.secularOne(
-                                                color: Colors.white,
+                                              "name : ${dataList[index].name}",
+                                              style: TextStyle(
+                                                color: Colors.black,
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 20,
                                               ),
                                             ),
                                             SizedBox(
-                                              height: 4,
+                                              height: 20,
+                                            ),
+                                            Container(
+                                              height:3 ,
+                                              width: double.infinity,
+                                              color: Colors.white,
+                                            ),
+                                            SizedBox(
+                                              height: 20,
                                             ),
                                             Text(
-                                              "${dataList[index].description}",
-                                              style: GoogleFonts.secularOne(
-                                                color: Colors.white,
+                                              "Descreion : ${dataList[index].description}",
+                                              style: TextStyle(
+                                                color: Colors.black,
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 12,
+                                                fontSize: 17,
                                               ),
                                             ),
                                             SizedBox(
-                                              height: 4,
+                                              height: 20,
+                                            ),
+                                            Container(
+                                              height:3 ,
+                                              width: double.infinity,
+                                              color: Colors.white,
+                                            ),
+                                            SizedBox(
+                                              height: 20,
                                             ),
                                             Text(
                                               "₹ ${dataList[index].price}.00",
-                                              style: GoogleFonts.secularOne(
+                                              style: TextStyle(
                                                 color: Colors.red,
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 16,
+                                                fontSize: 20,
                                               ),
                                             ),
                                             SizedBox(
-                                              height: 4,
+                                              height: 20,
+                                            ),
+                                            Container(
+                                              height:3 ,
+                                              width: double.infinity,
+                                              color: Colors.white,
+                                            ),
+                                            SizedBox(
+                                              height: 20,
                                             ),
                                             Text(
-                                              "${dataList[index].category}",
-                                              style: GoogleFonts.secularOne(
-                                                color: Colors.white,
+                                              "Category : ${dataList[index].category}",
+                                              style: TextStyle(
+                                                color: Colors.black,
                                                 fontWeight: FontWeight.w500,
-                                                fontSize: 14,
+                                                fontSize: 17,
                                               ),
+                                            ),
+                                            SizedBox(
+                                              height: 20,
+                                            ),
+                                            Container(
+                                              height:3 ,
+                                              width: double.infinity,
+                                              color: Colors.white,
+                                            ),
+                                            SizedBox(
+                                              height: 20,
                                             ),
                                           ],
                                         ),

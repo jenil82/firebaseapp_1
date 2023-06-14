@@ -60,10 +60,10 @@ class _InsertScreenState extends State<InsertScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 5,
+                  height: 1,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
@@ -87,7 +87,7 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "",
+                              hintText: "name",helperStyle: TextStyle(color: Colors.white38),
                               hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -99,9 +99,6 @@ class _InsertScreenState extends State<InsertScreen> {
                       ],
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
                 ),
                 Padding(
                   padding: EdgeInsets.only(
@@ -119,7 +116,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 5,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
@@ -143,7 +140,7 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "",
+                              hintText: "Price",
                               hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -155,9 +152,6 @@ class _InsertScreenState extends State<InsertScreen> {
                       ],
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
                 ),
                 Padding(
                   padding: EdgeInsets.only(
@@ -175,7 +169,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 5,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
@@ -215,9 +209,6 @@ class _InsertScreenState extends State<InsertScreen> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
                 Padding(
                   padding: EdgeInsets.only(
                     left: 2,
@@ -234,7 +225,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 5,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
@@ -271,9 +262,7 @@ class _InsertScreenState extends State<InsertScreen> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+
                 Padding(
                   padding: EdgeInsets.only(
                     left: 2,
@@ -290,7 +279,7 @@ class _InsertScreenState extends State<InsertScreen> {
                   height: 5,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
@@ -305,9 +294,7 @@ class _InsertScreenState extends State<InsertScreen> {
                           bottom: 10,
                         ),
                       ),
-                      SizedBox(
-                        width: 15,
-                      ),
+
                       Expanded(
                         child: DropdownButtonFormField(
                           value: homeController.selectedICategory.value,
@@ -343,9 +330,7 @@ class _InsertScreenState extends State<InsertScreen> {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+
                 Padding(
                   padding: EdgeInsets.only(
                     left: 2,
