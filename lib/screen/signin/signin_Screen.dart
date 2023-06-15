@@ -18,7 +18,7 @@ class _SigninScreenState extends State<SigninScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue.shade50,
+      backgroundColor: Colors.blue.shade100,
       body: SingleChildScrollView(
         child: Stack(
           children: [

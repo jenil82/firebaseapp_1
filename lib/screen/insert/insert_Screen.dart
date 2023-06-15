@@ -47,18 +47,6 @@ class _InsertScreenState extends State<InsertScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    "Name",
-                    style:TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
                 SizedBox(
                   height: 1,
                 ),
@@ -97,18 +85,6 @@ class _InsertScreenState extends State<InsertScreen> {
                           ),
                         ),
                       ],
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    "Price",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
                     ),
                   ),
                 ),
@@ -153,18 +129,6 @@ class _InsertScreenState extends State<InsertScreen> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    "Description",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
                 SizedBox(
                   height: 5,
                 ),
@@ -196,7 +160,7 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "",
+                              hintText: "Description",
                               hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -206,18 +170,6 @@ class _InsertScreenState extends State<InsertScreen> {
                           ),
                         ),
                       ],
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    "Offer",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
                     ),
                   ),
                 ),
@@ -249,9 +201,9 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "",
+                              hintText: "Offer",
                               hintStyle: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                               border: InputBorder.none,
@@ -259,19 +211,6 @@ class _InsertScreenState extends State<InsertScreen> {
                           ),
                         ),
                       ],
-                    ),
-                  ),
-                ),
-
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    "Category",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
                     ),
                   ),
                 ),
@@ -328,19 +267,6 @@ class _InsertScreenState extends State<InsertScreen> {
                         width: 20,
                       ),
                     ],
-                  ),
-                ),
-
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    "Image",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
                   ),
                 ),
                 SizedBox(

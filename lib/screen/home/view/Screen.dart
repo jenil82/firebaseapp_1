@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
         ),
-        backgroundColor: Colors.blue.shade50,
+        backgroundColor: Colors.blue.shade100,
         body: Column(
           children: [
             Expanded(

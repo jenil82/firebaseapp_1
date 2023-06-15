@@ -54,25 +54,13 @@ class _UpdateScreenState extends State<UpdateScreen> {
             ),
           ),
         ),
-        backgroundColor: Colors.blue.shade50,
+        backgroundColor: Colors.blue.shade100,
         body: Padding(
           padding: EdgeInsets.all(20),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    " Name",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
                 SizedBox(
                   height: 5,
                 ),
@@ -101,7 +89,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "",
+                              hintText: "Name",
                               hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -115,22 +103,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    " Price",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 Container(
                   height: 65,
@@ -161,7 +134,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "",
+                              hintText: "Price",
                               hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -175,22 +148,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    " Description",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 Container(
                   height: 65,
@@ -220,7 +178,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "",
+                              hintText: "Description",
                               hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -234,22 +192,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    " Offer",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 Container(
                   height: 65,
@@ -279,7 +222,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "",
+                              hintText: "Offer",
                               hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -293,22 +236,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    " Category",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 Container(
                   height: 65,
@@ -359,22 +287,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 2,
-                  ),
-                  child: Text(
-                    " Image",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 Container(
                   height: 300,
