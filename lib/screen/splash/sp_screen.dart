@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Duration(seconds: 10),
           () => isLogin == true
           ? Get.offAndToNamed('home_screen')
-          : Get.offAndToNamed('signin_screen'),
+          : Get.offAndToNamed('si'),
     );
     return SafeArea(
       child: Scaffold(
