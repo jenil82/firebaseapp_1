@@ -181,7 +181,7 @@ class _SigninScreenState extends State<SigninScreen> {
                               final snackBar = SnackBar(
                                 elevation: 0,
                                 behavior: SnackBarBehavior.floating,
-                                backgroundColor: Colors.transparent,
+                                backgroundColor: Colors.teal,
                                 content: AwesomeSnackbarContent(
                                   title: "Failure",
                                   message: "${msg}",
