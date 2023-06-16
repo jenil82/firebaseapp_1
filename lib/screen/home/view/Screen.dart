@@ -126,148 +126,152 @@ class _HomeScreenState extends State<HomeScreen> {
                             onLongPress: () {
                               Get.toNamed('insert_screen');
                             },
-                            child: Container(
-                              height: 500,
-                              width: double.infinity,
-                              decoration: BoxDecoration(
-                                color: Colors.blueAccent.shade100,
-                                borderRadius: BorderRadius.circular(10),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.white12,
-                                    offset: const Offset(
-                                      5.0,
-                                      5.0,
-                                    ),
-                                    blurRadius: 10.0,
-                                    spreadRadius: 2.0,
-                                  ), //BoxShadowBoxShadow
-                                ],
-                              ),
-                              child: Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  right: 20,
-                                  top: 10,
-                                  bottom: 10,
-                                ),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      height: 200,
-                                      width: 200,
-                                      alignment: Alignment.center,
-                                      child: Image.asset(
-                                        "assets/img/3.png",
-                                        height: 100,
-                                        width: 100,
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 20),
+                              child: Container(
+                                height: 500,
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  color: Colors.blueAccent.shade100,
+                                  borderRadius: BorderRadius.circular(10),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black,
+                                      offset: const Offset(
+                                        5.0,
+                                        5.0,
                                       ),
-                                    ),
-                                    SizedBox(
-                                      width: 20,
-                                    ),
-                                    Expanded(
-                                      child: Container(
-                                        height: double.infinity,
-                                        width: double.infinity,
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Container(
-                                              height:3 ,
-                                              width: double.infinity,
-                                              color: Colors.white,
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Text(
-                                              "name : ${dataList[index].name}",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 20,
-                                              ),
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Container(
-                                              height:3 ,
-                                              width: double.infinity,
-                                              color: Colors.white,
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Text(
-                                              "Descreion : ${dataList[index].description}",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 17,
-                                              ),
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Container(
-                                              height:3 ,
-                                              width: double.infinity,
-                                              color: Colors.white,
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Text(
-                                              "₹ ${dataList[index].price}.00",
-                                              style: TextStyle(
-                                                color: Colors.red,
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 20,
-                                              ),
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Container(
-                                              height:3 ,
-                                              width: double.infinity,
-                                              color: Colors.white,
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Text(
-                                              "Category : ${dataList[index].category}",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w500,
-                                                fontSize: 17,
-                                              ),
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Container(
-                                              height:3 ,
-                                              width: double.infinity,
-                                              color: Colors.white,
-                                            ),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                          ],
+                                      blurRadius: 10.0,
+                                      spreadRadius: 2.0,
+                                    ), //BoxShadowBoxShadow
+                                  ],
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 20,
+                                    right: 20,
+                                    top: 10,
+                                    bottom: 10,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        height: 200,
+                                        width: 200,
+                                        alignment: Alignment.center,
+
+                                        child: Image.asset(
+                                          "assets/img/3.png",
+                                          height: 100,
+                                          width: 100,
                                         ),
                                       ),
-                                    )
-                                  ],
+                                      SizedBox(
+                                        width: 20,
+                                      ),
+                                      Expanded(
+                                        child: Container(
+                                          height: double.infinity,
+                                          width: double.infinity,
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Container(
+                                                height:3 ,
+                                                width: double.infinity,
+                                                color: Colors.white,
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Text(
+                                                "name : ${dataList[index].name}",
+                                                style: TextStyle(
+                                                  color: Colors.black,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 20,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Container(
+                                                height:3 ,
+                                                width: double.infinity,
+                                                color: Colors.white,
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Text(
+                                                "Descreion : ${dataList[index].description}",
+                                                style: TextStyle(
+                                                  color: Colors.black,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 17,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Container(
+                                                height:3 ,
+                                                width: double.infinity,
+                                                color: Colors.white,
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Text(
+                                                "₹ ${dataList[index].price}.00",
+                                                style: TextStyle(
+                                                  color: Colors.red,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 20,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Container(
+                                                height:3 ,
+                                                width: double.infinity,
+                                                color: Colors.white,
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Text(
+                                                "Category : ${dataList[index].category}",
+                                                style: TextStyle(
+                                                  color: Colors.black,
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 17,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                              Container(
+                                                height:3 ,
+                                                width: double.infinity,
+                                                color: Colors.white,
+                                              ),
+                                              SizedBox(
+                                                height: 20,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),

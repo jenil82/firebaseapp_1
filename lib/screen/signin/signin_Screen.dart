@@ -22,20 +22,27 @@ class _SigninScreenState extends State<SigninScreen> {
       body: SingleChildScrollView(
         child: Stack(
           children: [
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 100.0),
+              child: Center(
+                child: Container(
+                  height: 200,
+                  width: 200,
+                  alignment: Alignment.center,
+                  child: Image.asset("assets/img/1.png"),
+                ),
+              ),
+            ),
             Center(
               child: Padding(
                 padding: EdgeInsets.all(30),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
-                      height: 200,
-                      width: 200,
-                      alignment: Alignment.center,
-                      child: Image.asset("assets/img/1.png"),
-                    ),
                     SizedBox(
-                      height: 50,
+                      height: 300,
                     ),
                     Container(
                       height: 65,

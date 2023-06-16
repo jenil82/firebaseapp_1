@@ -56,6 +56,18 @@ class _InsertScreenState extends State<InsertScreen> {
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.blueAccent.shade100,
+                        offset: const Offset(
+                          1,
+                          1,
+                        ),
+                        blurRadius: 1,
+                        spreadRadius: 1,
+                        blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -75,7 +87,8 @@ class _InsertScreenState extends State<InsertScreen> {
                               fontWeight: FontWeight.w500,
                             ),
                             decoration: InputDecoration(
-                              hintText: "name",helperStyle: TextStyle(color: Colors.white38),
+                              hintText: "name",
+                              helperStyle: TextStyle(color: Colors.white38),
                               hintStyle: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -97,6 +110,18 @@ class _InsertScreenState extends State<InsertScreen> {
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -138,6 +163,18 @@ class _InsertScreenState extends State<InsertScreen> {
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            -1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -148,9 +185,7 @@ class _InsertScreenState extends State<InsertScreen> {
                     ),
                     child: Row(
                       children: [
-                        SizedBox(
-                          width: 15,
-                        ),
+
                         Expanded(
                           child: TextField(
                             controller: descriptionc,
@@ -182,6 +217,18 @@ class _InsertScreenState extends State<InsertScreen> {
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -223,6 +270,18 @@ class _InsertScreenState extends State<InsertScreen> {
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Row(
                     children: [
@@ -233,17 +292,16 @@ class _InsertScreenState extends State<InsertScreen> {
                           bottom: 10,
                         ),
                       ),
-
                       Expanded(
                         child: DropdownButtonFormField(
                           value: homeController.selectedICategory.value,
                           items: homeController.iCategoryList
                               .map(
                                 (element) => DropdownMenuItem(
-                              child: Text(element),
-                              value: element,
-                            ),
-                          )
+                                  child: Text(element),
+                                  value: element,
+                                ),
+                              )
                               .toList(),
                           onChanged: (value) {
                             homeController.selectedICategory.value = value!;
@@ -278,16 +336,28 @@ class _InsertScreenState extends State<InsertScreen> {
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       imagePath == null
                           ? Image.asset(
-                        "assets/img/1.png",
-                        height: 100,
-                        width: 100,
-                      )
+                              "assets/img/1.png",
+                              height: 100,
+                              width: 100,
+                            )
                           : Image.file(imagePath),
                       SizedBox(
                         height: 25,

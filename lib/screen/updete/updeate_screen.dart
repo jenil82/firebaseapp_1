@@ -65,11 +65,23 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 5,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -106,11 +118,23 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 10,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -121,10 +145,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     ),
                     child: Row(
                       children: [
-
-                        SizedBox(
-                          width: 15,
-                        ),
                         Expanded(
                           child: TextField(
                             controller: pricec,
@@ -151,11 +171,23 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 10,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -166,9 +198,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     ),
                     child: Row(
                       children: [
-                        SizedBox(
-                          width: 15,
-                        ),
                         Expanded(
                           child: TextField(
                             controller: descriptionc,
@@ -195,11 +224,23 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 10,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
@@ -210,9 +251,6 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     ),
                     child: Row(
                       children: [
-                        SizedBox(
-                          width: 15,
-                        ),
                         Expanded(
                           child: TextField(
                             controller: offerc,
@@ -239,17 +277,27 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 10,
                 ),
                 Container(
-                  height: 65,
+                  height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Row(
                     children: [
-                      SizedBox(
-                        width: 15,
-                      ),
+                      SizedBox(width: 15,),
                       Expanded(
                         child: DropdownButtonFormField(
                           value: homeController.selectedUCategory.value,
@@ -290,24 +338,36 @@ class _UpdateScreenState extends State<UpdateScreen> {
                   height: 10,
                 ),
                 Container(
-                  height: 300,
+                  height: 180,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.black26,
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueAccent.shade100,
+                          offset: const Offset(
+                            1,
+                            1,
+                          ),
+                          blurRadius: 1,
+                          spreadRadius: 1,
+                          blurStyle: BlurStyle.inner
+                      ), //BoxShadowBoxShadow
+                    ],
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       imagePath == null
                           ? Image.asset(
-                        "",
+                        "assets/img/4.png",
                         height: 150,
                         width: 150,
                       )
                           : Image.file(imagePath),
                       SizedBox(
-                        height: 25,
+                        height: 10,
                       ),
                       InkWell(
                         onTap: () async {
@@ -355,7 +415,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                     height: 60,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Colors.blue.shade50,
+                      color: Colors.blue.shade100,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     alignment: Alignment.center,
